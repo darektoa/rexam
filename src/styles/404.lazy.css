@@ -1,0 +1,51 @@
+:root{
+  --main-color: #3A75AF;
+}
+
+html, body, main{
+  height: 100%;
+  padding: 1rem;
+  justify-content: center;
+}
+
+#error-box{
+  width: 100%;
+  max-width: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #FFF;
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px 1px #D6D6D6;
+}
+
+#error-box > h1{
+  width: 100%;
+  padding: 3rem 1rem;
+  display: inline-block;
+  background-color: var(--main-color);
+  color: #FFF;
+  font-size: 8rem;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 1rem;
+}
+
+#error-box > p{
+  padding: 3rem 1rem;
+  color: var(--main-color);
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+#error-box > a{
+  margin-bottom: 3rem;
+  padding: 1rem 2.5rem;
+  display: inline-block;
+  background-color: var(--main-color);
+  color: #FFF;
+  font-size: 1.8rem;
+  text-decoration: none;
+  border-radius: 1rem;
+}

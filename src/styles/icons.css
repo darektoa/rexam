@@ -1,0 +1,124 @@
+*[class^="icon_"]{
+  --icon-size: 2.5rem;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  display: inline-block;
+  background-image: url("./images/icons.svg");
+  background-size: calc(var(--icon-size) * 10);
+  background-repeat: no-repeat;
+}
+
+
+/*
+  ICONS EYE
+*/
+.icon_eye-36b889{
+  background-position-x: calc(var(--icon-size) * -1 * 0);
+  background-position-y: calc(var(--icon-size) * -1 * 0);
+}
+
+.icon_eye-disabled-36b889{
+  background-position-x: calc(var(--icon-size) * -1 * 1);
+  background-position-y: calc(var(--icon-size) * -1 * 0);
+}
+
+
+/*
+  ICONS RESULT
+*/
+.icon_success-25e921{
+  background-position-x: calc(var(--icon-size) * -1 * 2);
+  background-position-y: calc(var(--icon-size) * -1 * 0);
+}
+
+.icon_failed-e81515{
+  background-position-x: calc(var(--icon-size) * -1 * 3);
+  background-position-y: calc(var(--icon-size) * -1 * 0);
+}
+
+
+/*
+  ICONS SYMBOL
+*/
+.icon_check-25e921{
+  background-position-x: calc(var(--icon-size) * -1 * 4);
+  background-position-y: calc(var(--icon-size) * -1 * 0);
+}
+
+.icon_plus-cd3a3a{
+  background-position-x: calc(var(--icon-size) * -1 * 5);
+  background-position-y: calc(var(--icon-size) * -1 * 0);
+}
+
+.icon_dropdown-7a7a7a{
+  background-position-x: calc(var(--icon-size) * -1 * 1);
+  background-position-y: calc(var(--icon-size) * -1 * 1);
+}
+
+.icon_plus-circle-fff{
+  background-position-x: calc(var(--icon-size) * -1 * 2);
+  background-position-y: calc(var(--icon-size) * -1 * 1);
+}
+
+.icon_minus-circle-fff{
+  background-position-x: calc(var(--icon-size) * -1 * 3);
+  background-position-y: calc(var(--icon-size) * -1 * 1);
+}
+
+.icon_arrow-circle-fff{
+  background-position-x: calc(var(--icon-size) * -1 * 4);
+  background-position-y: calc(var(--icon-size) * -1 * 1);
+}
+
+.icon_menu-circle-fff{
+  background-position-x: calc(var(--icon-size) * -1 * 5);
+  background-position-y: calc(var(--icon-size) * -1 * 1);
+}
+
+.icon_check-circle-fff{
+  background-position-x: calc(var(--icon-size) * -1 * 6);
+  background-position-y: calc(var(--icon-size) * -1 * 1);
+}
+
+
+/*
+ICONS REXAM
+*/
+.icon_rexam-circle-only-36B889{
+  background-position-x: calc(var(--icon-size) * -1 * 7);
+  background-position-y: calc(var(--icon-size) * -1 * 1);
+}
+
+.icon_rexam-without-circle-36B889{
+  background-position-x: calc(var(--icon-size) * -1 * 8);
+  background-position-y: calc(var(--icon-size) * -1 * 1);
+}
+
+
+/*
+  ICONS MENU OF REXAM
+*/
+.icon_history-fff{
+  background-position-x: calc(var(--icon-size) * -1 * 6);
+  background-position-y: calc(var(--icon-size) * -1 * 0);
+}
+
+.icon_join-exam-fff{
+  background-position-x: calc(var(--icon-size) * -1 * 7);
+  background-position-y: calc(var(--icon-size) * -1 * 0);
+}
+
+.icon_my-exam-fff{
+  background-position-x: calc(var(--icon-size) * -1 * 8);
+  background-position-y: calc(var(--icon-size) * -1 * 0);
+}
+
+.icon_create-exam-fff{
+  background-position-x: calc(var(--icon-size) * -1 * 9);
+  background-position-y: calc(var(--icon-size) * -1 * 0);
+}
+
+.icon_dashboard-fff{
+  background-position-x: calc(var(--icon-size) * -1 * 0);
+  background-position-y: calc(var(--icon-size) * -1 * 1);
+}

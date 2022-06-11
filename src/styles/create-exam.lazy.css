@@ -1,0 +1,201 @@
+:root{
+  --main-color: #AF563A;
+  --main-color-opacity: #AF563A25;
+}
+
+main{
+  padding: 3rem;
+}
+
+#create-exam{
+  width: 100%;
+  max-width: 80rem;
+  display: grid;
+  grid-template-columns: repeat(4, 15rem);
+  grid-auto-rows: 15rem;
+  justify-content: space-between;
+}
+
+
+
+/*
+  HEADER TITLE
+*/
+#create-exam > header{
+  width: 100%;
+  height: 15rem;
+  padding: 0 3rem;
+  display: flex;
+  align-items: center;
+  grid-column: 1 / -1;
+  position: relative;
+  background-color: var(--main-color);
+  border-radius: 1rem;
+  user-select: none;
+}
+
+#create-exam > header > h2{
+  max-width: 55%;
+  font-size: 4rem;
+  color: #FFF;
+}
+
+#create-exam > header > img{
+  width: 45%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  object-fit: cover;
+}
+
+
+/*
+  INPUT BOX
+*/
+#create-exam > ul.form-box{
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  grid-area: 2 / 1 / 5 / -1;
+}
+
+#create-exam > ul.form-box > li{
+  margin-bottom: 2rem;
+  list-style: none;
+}
+
+#create-exam > ul.form-box > li > .input,
+#create-exam > ul.form-box > li > .textarea{
+  width: 100%;
+  max-width: 40rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+#create-exam > ul.form-box > li > .textarea{
+  height: 12rem;
+  padding: 1.5rem;
+  position: relative;
+  color: #4E4E4E;
+  font-size: 1.6rem;
+  border: 1px solid var(--main-color);
+  border-radius: 1rem;
+}
+
+#create-exam > ul.form-box > li > .input > label,
+#create-exam > ul.form-box > li > .textarea > label{
+  padding: 0 1rem;
+  position: absolute;
+  top: -.8rem;
+  left: 2rem;
+  color: var(--main-color);
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  background-color: #FFF;
+  z-index: 1;
+}
+
+#create-exam > ul.form-box > li > .input > label.error{
+  color: red;
+}
+
+#create-exam > ul.form-box > li > .input > input,
+#create-exam > ul.form-box > li > .textarea > textarea{
+  width: 100%;
+  height: 4rem;
+  padding: 0 1.5rem;
+  position: relative;
+  color: #4E4E4E;
+  font-size: 1.6rem;
+  border: 1px solid var(--main-color);
+  border-radius: 1rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+#create-exam > ul.form-box > li > .input > input#exam-duration-input{
+  padding: 1.5rem 10rem 1.5rem 1.5rem;
+}
+
+#create-exam > ul.form-box > li > .textarea > textarea{
+  height: 100%;
+  padding: 0;
+  border: none;
+  border-radius: unset;
+  resize: none;
+  overflow: auto;
+}
+
+#create-exam > ul.form-box > li > .input > input.error,
+#create-exam > ul.form-box > li > .input > input.error:focus{
+  border-color: red;
+  box-shadow: 0 0 3px 0 red;
+}
+
+#create-exam > ul.form-box > li > .input > input:focus,
+#create-exam > ul.form-box > li > .textarea > textarea:focus{
+  border-color: #4E4E4E;
+  outline: none;
+}
+
+#create-exam > ul.form-box > li > .input > span{
+  padding: 0 1rem;
+  position: absolute;
+  right: 1rem;
+  color: var(--main-color);
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  background-color: #FFF;
+  z-index: 1;
+}
+
+#create-exam > ul.form-box > li > .error-message{
+  margin-top: .3rem;
+  padding: 0 1rem;
+  color: red;
+  font-size: 1.4rem;
+}
+
+#create-exam > .form-box > li > button{
+  padding: 1rem 2.5rem;
+  display: inline-block;
+  color: #FFF;
+  font-size: 1.6rem;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--main-color);
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 750px) {
+  main{
+    padding: 3rem 2rem;
+  }
+
+  #create-exam{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+
+@media screen and (max-width: 550px) {
+  #create-exam > header > h2{
+    max-width: unset;
+  }
+  
+  #create-exam > header > img{
+    width: 70%;
+    opacity: .7;
+  }
+
+  #create-exam > ul.form-box{
+    margin-top: 2rem;
+  }
+}

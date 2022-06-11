@@ -1,0 +1,199 @@
+:root{
+    --main-color: #3A75AF;
+}
+
+html, body, main{
+    height: 100%;
+    justify-content: center;
+}
+
+#register-form{
+    width: 40rem;
+    height: 50rem;
+    flex-shrink: 0;
+    position: relative;
+    background-color: #FFF;
+    border-radius: 1rem;
+    box-shadow: 0 4px 15px 1px #D6D6D6;
+}
+
+
+/*
+  HEADER
+*/
+#register-form > header{
+    width: 100%;
+    padding: 1rem 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 1rem;
+    background-color: var(--main-color);
+}
+
+#register-form > header > img{
+    width: 10rem;
+    margin-bottom: .5rem;
+}
+
+#register-form > header > p{
+  color: #FFF;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+
+/*
+  INPUT BOX
+*/
+#register-form > ul.input-box{
+    width: 100%;
+    padding: 3.5rem 3.5rem 0 3.5rem;
+
+}
+
+#register-form > ul.input-box > li{
+    margin-bottom: 2rem;
+    list-style: none;
+}
+
+#register-form > ul.input-box > li > .input{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#register-form > ul.input-box > li > .input > label{
+    padding: 0 1rem;
+    position: absolute;
+    top: -.8rem;
+    left: 2rem;
+    color: var(--main-color);
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    background-color: #FFF;
+    z-index: 1;
+}
+
+#register-form > ul.input-box > li > .input > label.error{
+    color: red;
+}
+
+#register-form > ul.input-box > li > .input > input{
+    width: 100%;
+    height: 4rem;
+    padding: 0 1.5rem;
+    position: relative;
+    color: #4E4E4E;
+    font-size: 1.6rem;
+    border: 1px solid var(--main-color);
+    border-radius: 1rem;
+    text-overflow: ellipsis;
+}
+
+#register-form > ul.input-box > li > .input > input[id*=password-input]{
+    padding-right: 3.5rem;
+}
+
+#register-form > ul.input-box > li > .input > input.error,
+#register-form > ul.input-box > li > .input > input.error:focus{
+    border-color: red;
+    box-shadow: 0 0 3px 0 red;
+}
+
+#register-form > ul.input-box > li > .input > input:focus{
+    border-color: #4E4E4E;
+    outline: none;
+}
+
+#register-form > ul.input-box > li > .input > .toggle-show-password{
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    right: 1rem;
+    background-color: transparent;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    z-index: 10;
+}
+
+#register-form > ul.input-box > li > .input > .toggle-show-password > i{
+    --icon-size: 2rem;
+}
+
+#register-form > ul.input-box > li > .error-message{
+    margin-top: .3rem;
+    padding: 0 1rem;
+    color: red;
+    font-size: 1.4rem;
+}
+
+
+/*
+  BUTTON BOX
+*/
+#register-form > .button-box{
+    width: 100%;
+    height: auto;
+    padding: 0 3.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 3rem;
+}
+
+#register-form > .button-box > *[class^="button"]{
+    padding: 1rem 2.5rem;
+    display: inline-block;
+    color: #FFF;
+    font-size: 1.6rem;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 1rem;
+}
+
+#register-form > .button-box > .button-back,
+#register-form > .button-box > .button-login{
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#register-form > .button-box > .button-next,
+#register-form > .button-box > .button-register{
+    background-color: var(--main-color);
+    box-shadow: 0 4px 4px 0 #D6D6D6;
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 350px) {
+    #register-form{
+        width: 90%;
+    }
+
+    #register-form > ul.input-box{
+        padding: 3.5rem 2rem 0 2rem;
+    }
+
+    #register-form > .button-box{
+        padding: 0 2rem;
+    }
+}
+
+
+
+@media (max-height: 500px) and (max-width: 500px) , (max-height: 550px) and (min-width: 501px) {
+    html, body, main{
+        height: auto;
+        padding: 2rem 0;
+        justify-content: flex-start;
+    }
+}

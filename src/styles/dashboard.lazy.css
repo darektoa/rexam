@@ -1,0 +1,168 @@
+:root{
+  --main-color: #3A75AF;
+  --main-color-opacity: #3A75AF25;
+}
+
+main{
+  padding: 3rem;
+  height: auto;
+}
+
+#dashboard{
+  width: 100%;
+  max-width: 80rem;
+  display: grid;
+  grid-template-columns: repeat(4, 15rem);
+  grid-auto-rows: 15rem;
+  gap: 3rem;
+  justify-content: space-between;
+}
+
+
+
+/*
+  HEADER TITLE
+*/
+#dashboard > header{
+  width: 100%;
+  height: 15rem;
+  padding: 0 3rem;
+  display: flex;
+  align-items: center;
+  grid-column: 1 / -1;
+  position: relative;
+  background-color: var(--main-color);
+  border-radius: 1rem;
+  user-select: none;
+}
+
+#dashboard > header > h2{
+  max-width: 55%;
+  font-size: 4rem;
+  color: #FFF;
+}
+
+#dashboard > header > img{
+  width: 45%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  object-fit: cover;
+}
+
+
+/*
+  ITEMS
+*/
+#dashboard > a,
+#dashboard > div{
+  width: 100%;
+  min-width: 15rem;
+  height: 15rem;
+  color: var(--main-color);
+  background-color: #FFF;
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px 1px #D6D6D6;
+}
+
+#dashboard > a{
+  display: grid;
+  grid-template-columns: 15rem auto;
+  grid-column: auto / span 2;
+  place-items: center;
+  text-decoration: none;
+}
+
+#dashboard > a > .icon-box{
+  width: 15rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-color);
+  border-radius: 1rem;
+}
+
+#dashboard > a > .icon-box > i{
+  --icon-size: 10rem;
+}
+
+#dashboard > a > h3{
+  font-size: 2.4rem;
+  font-weight: normal;
+}
+
+#dashboard > div{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  overflow: hidden;
+}
+
+#dashboard > div > h3{
+  height: 3rem;
+  padding: 0 1rem;
+  flex-shrink: 0;
+  font-size: 1.6rem;
+  font-weight: normal;
+  color: #FFF;
+  text-align: center;
+  text-overflow: ellipsis;
+  line-height: 3rem;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: var(--main-color);
+}
+
+
+/*
+  ITEM - DATETIME
+*/
+#dashboard > div > p,
+#dashboard > .datetime-box > time{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+
+#dashboard > .datetime-box > time > span:first-child{
+  font-size: 1.6rem;
+}
+
+
+
+@media screen and (max-width: 750px) {
+  main{
+    padding: 3rem 2rem;
+  }
+
+  #dashboard{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #dashboard > a{
+    grid-column: auto / span 2;
+  }
+}
+
+
+
+@media screen and (max-width: 550px) {
+  #dashboard{
+    gap: 2rem;
+  }
+
+  #dashboard > header > h2{
+    max-width: unset;
+  }
+
+  #dashboard > header > img{
+    width: 70%;
+    opacity: .7;
+  }
+}

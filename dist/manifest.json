@@ -1,0 +1,39 @@
+{
+    "name": "Rexam",
+    "short_name": "Rexam",
+    "description": "Online Exam by Rexensoft",
+    "categories": ["exam", "education", "online"],
+    "display": "standalone",
+    "theme_color": "#FFF",
+    "background_color": "#FFF",
+    "scope": "/",
+    "start_url": "/index.html",
+    "icons": [
+        {
+            "src": "/icons/512x512.png",
+            "type": "image/png",
+            "sizes": "512x512",
+            "purpose": "any maskable"
+        }, {
+            "src": "/icons/192x192.png",
+            "type": "image/png",
+            "sizes": "192x192",
+            "purpose": "any maskable"
+        }, {
+            "src": "/icons/128x128.png",
+            "type": "image/png",
+            "sizes": "128x128",
+            "purpose": "any maskable"
+        }, {
+            "src": "/icons/76x76.png",
+            "type": "image/png",
+            "sizes": "76x76",
+            "purpose": "any maskable"
+        }, {
+            "src": "/icons/48x48.png",
+            "type": "image/png",
+            "sizes": "48x48",
+            "purpose": "any maskable"
+        }
+    ]
+}

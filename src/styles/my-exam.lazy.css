@@ -1,0 +1,198 @@
+:root{
+  --main-color: #3A9AAF;
+  --main-color-opacity: #3A9AAF25;
+}
+
+main{
+  padding: 3rem 3rem;
+}
+
+#my-exam{
+  width: 100%;
+  max-width: 80rem;
+  display: grid;
+  grid-template-columns: repeat(4, 15rem);
+  grid-auto-rows: 15rem;
+  gap: 3rem;
+  justify-content: space-between;
+}
+
+
+
+/*
+  HEADER TITLE
+*/
+#my-exam > header{
+  width: 100%;
+  height: 15rem;
+  padding: 0 3rem;
+  display: flex;
+  align-items: center;
+  grid-column: 1 / -1;
+  position: relative;
+  background-color: var(--main-color);
+  border-radius: 1rem;
+  user-select: none;
+}
+
+#my-exam > header > h2{
+  max-width: 55%;
+  font-size: 4rem;
+  color: #FFF;
+}
+
+#my-exam > header > img{
+  width: 45%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  object-fit: cover;
+}
+
+
+/*
+  CREATE EXAM BOX
+*/
+#my-exam > a{
+  width: 100%;
+  height: 15rem;
+  color: var(--main-color);
+  background-color: #FFF;
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px 1px #D6D6D6;
+}
+
+#my-exam > .create-exam-box{
+  grid-column: auto / span 2;
+  display: grid;
+  grid-template-columns: 15rem auto;
+  place-items: center;
+  text-decoration: none;
+}
+
+#my-exam > .create-exam-box > .icon-box{
+  width: 15rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-color);
+  border-radius: 1rem;
+}
+
+#my-exam > .create-exam-box > .icon-box > i{
+  --icon-size: 10rem;
+}
+
+#my-exam > .create-exam-box > h3{
+  font-size: 2.4rem;
+  font-weight: normal;
+}
+
+
+/*
+  EXAM BOX
+*/
+#my-exam > .exam-box{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+#my-exam > .exam-box > ul{
+  width: 100%;
+  height: 12rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#my-exam > .exam-box > ul > li{
+  width: 100%;
+  max-width: 20rem;
+  height: 2.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  color: var(--main-color);
+  background-color: #D8EBEF;
+  border-radius: .5rem;
+}
+
+#my-exam > .exam-box > h3{
+  width: 100%;
+  height: 3rem;
+  padding: 0 1rem;
+  position: absolute;
+  top: 12rem;
+  font-size: 1.6rem;
+  font-weight: normal;
+  font-weight: normal;
+  color: #FFF;
+  text-align: center;
+  text-overflow: ellipsis;
+  line-height: 3rem;
+  white-space: nowrap;
+  background-color: var(--main-color);
+  overflow: hidden;
+  transition-duration: .3s;
+  transition-property: height, top, border-radius;
+}
+
+#my-exam > .exam-box > h3:hover{
+  height: 15rem;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: unset;
+  white-space: unset;
+  border-radius: 1rem;
+}
+
+#my-exam > .exam-box > h3 > i{
+  --icon-size: 10rem;
+  display: none;
+  position: absolute;
+  opacity: 20%;
+}
+
+#my-exam > .exam-box > h3:hover > i{
+  display: inline-block;
+}
+
+
+
+@media screen and (max-width: 750px) {
+  main{
+    padding: 3rem 2rem;
+  }
+
+  #my-exam{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+
+@media screen and (max-width: 550px) {
+  #my-exam{
+    gap: 2rem;
+  }
+
+  #my-exam > header > h2{
+    max-width: unset;
+  }
+
+  #my-exam > header > img{
+    width: 70%;
+    opacity: .7;
+  }
+}

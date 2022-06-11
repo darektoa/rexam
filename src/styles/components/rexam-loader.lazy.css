@@ -1,0 +1,73 @@
+#rexam-loader{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(.1rem);
+  background-color: rgba(0, 0, 0, .1);
+  z-index: 200;
+
+}
+#rexam-loader > .loader-box{
+  width: 6rem;
+  height: 6rem;
+  padding: 1rem;
+  box-sizing: content-box;
+  position: relative;
+  background-color: #FFF;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px 5px #D6D6D6;
+}
+
+#rexam-loader > .loader-box > .icon-circle-only{
+  --icon-size: 6rem;
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  z-index: 1;
+}
+
+#rexam-loader > .loader-box > .icon-without-circle{
+  --icon-size: 6rem;
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  z-index: 5;
+}
+
+#rexam-loader > .loader-box > .icon-circle-only > .loader{
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1.1rem solid transparent;
+  border-left: 1.1rem solid #FFF;
+  border-radius: 50%;
+  background-color: transparent;
+  animation: spin 1s cubic-bezier(0.5, 0, 0.5, 1.0) infinite;
+  z-index: 2;
+}
+
+#rexam-loader > .loader-box > .icon-circle-only > .loader:nth-child(2) {
+  animation-delay: .1s;
+}
+
+#rexam-loader > .loader-box > .icon-circle-only > .loader:nth-child(3) {
+  animation-delay: .2s;
+}
+
+@-webkit-keyframes spin{
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+@keyframes spin{
+  0% {transform: rotate(0deg); }
+  100% {transform: rotate(360deg); }
+}

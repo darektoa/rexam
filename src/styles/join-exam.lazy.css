@@ -1,0 +1,160 @@
+:root{
+  --main-color: #AF3A79;
+  --main-color-opacity: #AF3A7925;
+}
+
+main{
+  padding: 3rem 3rem 0;
+}
+
+#join-exam{
+  width: 100%;
+  max-width: 80rem;
+  display: grid;
+  grid-template-columns: repeat(4, 15rem);
+  grid-auto-flow: 15rem;
+  grid-auto-rows: 15rem;
+  justify-content: space-between;
+}
+
+
+
+/*
+  HEADER TITLE
+*/
+#join-exam > header{
+  width: 100%;
+  height: 15rem;
+  padding: 0 3rem;
+  display: flex;
+  align-items: center;
+  grid-column: 1 / -1;
+  position: relative;
+  background-color: var(--main-color);
+  border-radius: 1rem;
+  user-select: none;
+}
+
+#join-exam > header > h2{
+  max-width: 55%;
+  font-size: 4rem;
+  color: #FFF;
+}
+
+#join-exam > header > img{
+  width: 45%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  object-fit: cover;
+}
+
+
+/*
+  INPUT BOX
+*/
+#join-exam > .form-box{
+  margin-top: 3rem;
+  grid-area: 2 / 1 / 4 / -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#join-exam > .form-box > .input{
+  width: 100%;
+  max-width: 40rem;
+  position: relative;
+}
+
+#join-exam > .form-box > .input > label{
+  padding: 0 1rem;
+  position: absolute;
+  top: -.8rem;
+  left: 2rem;
+  color: var(--main-color);
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  background-color: #FFF;
+  z-index: 1;
+}
+
+#join-exam > .form-box > .input > label.error{
+  color: red;
+}
+
+#join-exam > .form-box > .input > input{
+  width: 100%;
+  height: 4rem;
+  padding: 0 1.5rem;
+  position: relative;
+  color: #4E4E4E;
+  font-size: 1.6rem;
+  background-color: #FFF;
+  border: 1px solid var(--main-color);
+  border-radius: 1rem;
+  text-overflow: ellipsis;
+}
+
+#join-exam > .form-box > .input > input.error,
+#join-exam > .form-box > .input > input.error:focus{
+  border-color: red;
+  box-shadow: 0 0 3px 0 red;
+}
+
+#join-exam > .form-box > .input > input:focus{
+  border-color: #4E4E4E;
+  outline: none;
+}
+
+#join-exam > .form-box > .error-message{
+  margin-top: .3rem;
+  padding: 0 1rem;
+  color: red;
+  font-size: 1.4rem;
+}
+
+#join-exam > .form-box > button{
+  margin-top: 2rem;
+  padding: 1rem 2.5rem;
+  display: inline-block;
+  color: #FFF;
+  font-size: 1.6rem;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  background-color: var(--main-color);
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 750px) {
+  main{
+    padding: 3rem 2rem;
+  }
+
+  #join-exam{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+
+@media screen and (max-width: 550px) {
+  #join-exam > header > img{
+    width: 70%;
+    opacity: .7;
+  }
+
+  #join-exam > header > h2{
+    max-width: unset;
+  }
+
+  #join-exam > .form-box{
+    margin-top: 2rem;
+  }
+}

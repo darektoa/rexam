@@ -1,0 +1,57 @@
+@font-face {
+    font-family: "Itim";
+    src: url("./fonts/Itim-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-display: swap;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Itim", "Times New Roman", "sans-serif";
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    /* border: 1px solid red; */
+}::-webkit-scrollbar{
+    width: 7px;
+    background-color: #F0F0F0;
+}::-webkit-scrollbar:horizontal{
+    height: 7px;
+}::-webkit-scrollbar-thumb{
+    background-color: #CDCDCD;
+}
+
+:root{
+    font-size: 10px;
+}
+
+html,
+body,
+main{
+    width: 100%;
+    min-width: 305px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus{
+    background-color: none;
+    box-shadow: 0 0 0 100px #FFF inset !important;
+}
+
+.container{
+    width: 100%;
+    max-width: 1980px;
+}
+
+
+
+@media (max-width: 500px) {
+    :root{
+        font-size: 8.5px;
+    }
+}
